@@ -1,0 +1,10 @@
+test_ADTbabble_snr-5_unseen.samp
+test_ADTcafeteria_snr-5_unseen.samp
+test_ADTbabble_snr-2_unseen.samp
+test_ADTcafeteria_snr-2_unseen.samp
+test_ADTbabble_snr0_unseen.samp
+test_ADTcafeteria_snr0_unseen.samp
+test_ADTbabble_snr2_unseen.samp
+test_ADTcafeteria_snr2_unseen.samp
+test_ADTbabble_snr5_unseen.samp
+test_ADTcafeteria_snr5_unseen.samp
