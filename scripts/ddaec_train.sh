@@ -5,7 +5,7 @@ echo $model_name
 python -u train_ddaec.py \
 --train_list=../filelists/train_list.txt \
 --evaluate_file=../data/mixture/test/test_factory_snr-5_seen.samp \
---display_eval_steps=10 \
+--display_eval_steps=8000 \
 --eval_plot_num=3 \
 --model_name=$model_name \
 --width=64 \
