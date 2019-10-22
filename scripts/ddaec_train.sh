@@ -9,5 +9,5 @@ python -u train_ddaec.py \
 --eval_plot_num=3 \
 --model_name=$model_name \
 --width=64 \
---batch_size=2 \
+--batch_size=4 \
 #--resume_model=../models/${model_name}/${model_name}_latest.model
