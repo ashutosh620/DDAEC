@@ -93,14 +93,14 @@ class Metric(object):
                 print('#' * 5)
                 print('{}/{}, mix_stoi = {:.4f}, ideal_stoi = {:.4f}, est_stoi = {:.4f}'.format(j +1,
                                                                                                 self.num_test_sentences,
-                                                                                                mix_stoi_s_accu / float(j+1),
-                                                                                                ideal_stoi_s_accu / float(j+1), 
-                                                                                                est_stoi_s_accu / float(j+1)))
+                                                                                                mix_stoi_s,
+                                                                                                ideal_stoi_s, 
+                                                                                                est_stoi_s))
                       
                 print('{}/{}, mix_snr = {:.4f}, ideal_snr = {:.4f}, est_snr = {:.4f}'.format(j+1, self.num_test_sentences, 
-                                                                                             mix_snr_s_accu / float(j+1), 
-                                                                                             ideal_snr_s_accu/float(j+1), 
-                                                                                             est_snr_s_accu/float(j+1)))
+                                                                                             mix_snr_s, 
+                                                                                             ideal_snr_s, 
+                                                                                             est_snr_s))
                
                 mix_norm, scale_mix = normalize_wav(mix)
                 est_s_norm, scale_est_s = normalize_wav(est_s)
@@ -184,8 +184,10 @@ class Metric(object):
                            #est_pesq=est_pesq_s_accu/float(j+1))
                 print('#' * 5)
                 print('{}/{}, mix_pesq = {:.4f}, ideal_pesq = {:.4f}, '
-                      'est_pesq = {:.4f}'.format(j + 1, self.num_test_sentences, unprocessed_pesq_s_accu/float(j+1),                                                            ideal_pesq_s_accu/float(j+1),
-                                                 est_pesq_s_accu/float(j+1)))
+                      'est_pesq = {:.4f}'.format(j + 1, self.num_test_sentences,
+                                                 unprocessed_pesq_s,                                                            
+                                                 ideal_pesq_s,
+                                                 est_pesq_s))
                     
             #bar.finish()
             end1 = timeit.default_timer()
