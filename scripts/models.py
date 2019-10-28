@@ -196,7 +196,7 @@ class Model(object):
                 curr_time = end - start
                 ttime += curr_time
                 mtime = ttime / counter1
-                print('{}/{} (epoch = {}), loss = {:.5f}, time/batch = {:.5f}, mtime/batch = {:.5f}'.format(i+1, 
+                print('{}/{} (epoch = {}), loss = {:.5f}, time/batch = {:.5f}, mtime/batch = {:.5f}'.format(counter, 
                 total_train_batch, epoch, running_loss, curr_time, mtime))
                 start  = timeit.default_timer()
                 if (i+1) % self.eval_steps == 0:
